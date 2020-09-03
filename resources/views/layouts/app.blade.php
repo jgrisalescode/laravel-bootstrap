@@ -4,36 +4,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
   <title>Layout</title>
-  <style>
-    .header {
-      background-color: blue;
-      color: white;
-    }
-
-    .main {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: darkslateblue;
-      color: white;
-    }
-
-    .footer {
-      color: red;
-    }
-  </style>
 </head>
 
 <body>
-  <header class="header">
+  <header>
+    @include("layouts.navbar")
     @yield("header")
   </header>
-  <main class="main">
+  <main>
     @yield("main")
   </main>
-  <footer class="footer">
+  <footer>
     @yield("footer")
     Here goes the footer!
   </footer>
+  <script src="{{ asset('assets/js/jquery-3.4.1.min.js') }}"></script>
+  <script src="{{ asset('assets/js/popper.min.js') }}"></script>
+  <script src="{{ asset('assets/js/bootstrap.min.js') }}"></script>
 </body>
 
 </html>
