@@ -18,3 +18,5 @@ Route::get('/index', 'IndexController@index');
 Route::get('/create', 'IndexController@create');
 Route::get('/show', 'IndexController@show');
 Route::get('/articles', 'IndexController@store');
+Route::get('/contact', 'IndexController@contact');
+Route::get('/galery', 'IndexController@galery');

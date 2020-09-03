@@ -26,6 +26,16 @@ class IndexController extends Controller
         return view('create');
     }
 
+    public function contact()
+    {
+        return view('contact');
+    }
+
+    public function galery()
+    {
+        return view('galery');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
