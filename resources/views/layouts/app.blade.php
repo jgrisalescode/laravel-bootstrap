@@ -12,7 +12,8 @@
     }
 
     .main {
-      background-color: magenta;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: darkslateblue;
       color: white;
     }
 

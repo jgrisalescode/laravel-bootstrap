@@ -33,7 +33,9 @@ class IndexController extends Controller
 
     public function galery()
     {
-        return view('galery');
+        $students = ['Ana', 'Jurgen', 'Julian', 'Emmanuel'];
+        // $students = [];
+        return view('galery', compact("students"));
     }
 
     /**
